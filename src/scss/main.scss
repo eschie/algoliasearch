@@ -1,0 +1,85 @@
+@import 'utility/normalize';
+@import 'utility/variables';
+@import 'fonts';
+
+
+
+html, body{
+  font-family: 'League Spartan', 'arial';
+  font-size: 14px;
+  height: 100%;
+}
+
+header{
+  .inner-header{
+    padding: 5px 20px;
+    .logo{
+      display:inline-block;
+      color:white;
+    }
+    .search_box{
+      display: inline-block;
+      padding: 0 15px;
+      .input_container{
+        background-color: white;
+        input{
+          font-size: 14px;
+          line-height: 20px;
+          width:250px;
+          -webkit-transition: width .5s; /* Safari */
+          transition: width .5s;
+          border: none;
+        }
+        input:focus{
+          width:400px;
+        }
+        padding: 8px;
+      }
+    }
+  }
+}
+
+md-toolbar{
+  background-color: $bestBuyBlue;
+}
+
+.algolia-autocomplete {
+  width: 100%;
+
+  font-family: sans-serif;
+
+  .aa-input {
+    width: 100%;
+  }
+
+  .aa-hint {
+    width: 100%;
+    color: #999;
+  }
+
+  .aa-dropdown-menu {
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #999;
+    border-top: none;
+
+    .aa-suggestion {
+      cursor: pointer;
+      padding: 20px 4px;
+
+      &.aa-cursor {
+        background-color: #B2D7FF;
+      }
+
+      em {
+        font-weight: bold;
+        font-style: normal;
+      }
+
+
+      .sm{
+        font-size:10px;
+      }
+    }
+  }
+}
